@@ -24,6 +24,6 @@ test('test', async ({ page }) => {
   await page.getByTestId('standard-select-result').click();
   await page.getByTestId('ajax-btn').click();
   console.log("stopped execution 7:47pm");
-  console.log("checking PR process");
+  console.log("checking PR process from fb to main b");
   
 });
