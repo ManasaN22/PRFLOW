@@ -1,11 +1,21 @@
 
-name: Playwright Test
+name: Playwright By Manasa
 
 on: push
 
 jobs:
-  sample:
+  Slinux:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "GitHub Actions by Manasa"
+      - run: echo "GitHub Actions by Manasa on linux machine"
+  Swindowa:
+    runs-on: windows-latest
+
+    steps:
+      - run: echo "GitHub Actions by Manasa on window machine "
+  SMac:
+    runs-on: macos-latest
+
+    steps:
+      - run: echo "GitHub Actions by Manasa on mac machine "
