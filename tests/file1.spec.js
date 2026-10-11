@@ -1,8 +1,15 @@
 import { test, expect } from '@playwright/test';
 
+
+import { test, expect } from '@playwright/test';
+
+// GitHub changes
+
 test('test', async ({ page }) => {
-    console.log("started by jenkins as changes done in code")
-  await page.goto('https://www.sreenidhirajakrishnan.com/practice#section-1');
+    console.log("Started by Jenkins as changes were made in code");
+
+    await page.goto('https://www.sreenidhirajakrishnan.com/practice#section-1')
+
   await page.getByTestId('basic-form').click();
   await page.getByTestId('form-reset').click();
   await page.getByTestId('form-submit').click();
