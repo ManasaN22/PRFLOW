@@ -1,0 +1,11 @@
+
+name: Playwright Test
+
+on: push
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "GitHub Actions by Manasa"
