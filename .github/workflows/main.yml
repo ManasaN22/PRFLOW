@@ -1,0 +1,25 @@
+
+name: Playwright By Manasa
+
+on: push
+
+jobs:
+  Slinux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "GitHub Actions by Manasa on linux machine"
+  Swindowa:
+    needs: Slinux
+    runs-on: windows-latest
+
+    steps:
+      - run: echo "GitHub Actions by Manasa on window machine "
+  SMac:
+    needs:
+      - Slinux
+      - Swindowa
+    runs-on: macos-latest
+
+    steps:
+      - run: echo "GitHub Actions by Manasa on mac machine "
